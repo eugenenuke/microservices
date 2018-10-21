@@ -1,3 +1,4 @@
 #!/bin/sh
 
-docker-machine rm docker-host
+docker stop $(docker ps -q)
+docker rm $(docker ps -qa)
